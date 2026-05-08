@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rynar Estates Ltd | Premium Property Management & Letting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8f9fa; }
+        .font-luxury { font-family: 'Marcellus', serif; }
+        
+        .hero-estate {
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.8)), 
+                        url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2073&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .accent-border {
+            border-left: 4px solid #334155;
+        }
+
+        .property-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-slate-800 rounded flex items-center justify-center">
+                    <span class="text-white font-luxury text-xl">R</span>
+                </div>
+                <div class="leading-none">
+                    <span class="text-xl font-luxury tracking-widest text-slate-900 block">RYNAR</span>
+                    <span class="text-[9px] uppercase tracking-[0.4em] font-bold text-slate-400">Estates Limited</span>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-10 text-[10px] font-bold uppercase tracking-[0.3em] text-slate-500">
+                <a href="#home" class="hover:text-slate-900 transition">Beranda</a>
+                <a href="#services" class="hover:text-slate-900 transition">Layanan</a>
+                <a href="#about" class="hover:text-slate-900 transition">Tentang</a>
+                <a href="#contact" class="hover:text-slate-900 transition">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-estate h-screen flex items-center px-8">
+        <div class="max-w-7xl mx-auto w-full relative z-10">
+            <div class="max-w-3xl">
+                <p class="text-slate-300 font-bold tracking-[0.5em] uppercase text-[10px] mb-6">Expert Real Estate Solutions</p>
+                <h1 class="text-5xl md:text-7xl font-luxury text-white mb-10 leading-tight">
+                    Fondasi Kokoh <br><span class="italic text-slate-400">Masa Depan Anda.</span>
+                </h1>
+                <p class="text-lg text-slate-400 mb-12 leading-relaxed max-w-xl font-light">
+                    Rynar Estates Limited mengelola aset properti strategis dengan dedikasi tinggi, menghadirkan solusi hunian dan ruang komersial yang terintegrasi di London Barat.
+                </p>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <a href="#services" class="bg-white text-slate-900 px-10 py-4 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-slate-200 transition duration-500 shadow-xl">
+                        Lihat Portofolio
+                    </a>
+                    <a href="#contact" class="border border-slate-500 text-white px-10 py-4 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-white hover:text-slate-900 transition duration-500">
+                        Hubungi Kantor
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="py-32 px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24">
+                <h2 class="text-3xl md:text-5xl font-luxury text-slate-900 mb-6 italic">Layanan Properti Kami</h2>
+                <div class="w-20 h-px bg-slate-300 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="bg-white p-12 border border-slate-100 property-card transition duration-500">
+                    <i class="fas fa-building-circle-check text-2xl text-slate-400 mb-8"></i>
+                    <h4 class="text-lg font-luxury text-slate-900 mb-4 uppercase tracking-widest">Property Letting</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed font-light">Layanan penyewaan properti residensial dan komersial (SIC 68209) dengan manajemen penyewa yang profesional.</p>
+                </div>
+                <div class="bg-white p-12 border border-slate-100 property-card transition duration-500">
+                    <i class="fas fa-house-chimney-window text-2xl text-slate-400 mb-8"></i>
+                    <h4 class="text-lg font-luxury text-slate-900 mb-4 uppercase tracking-widest">Asset Management</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed font-light">Optimasi nilai aset melalui pemeliharaan rutin dan strategi pengembangan properti jangka panjang.</p>
+                </div>
+                <div class="bg-white p-12 border border-slate-100 property-card transition duration-500">
+                    <i class="fas fa-handshake text-2xl text-slate-400 mb-8"></i>
+                    <h4 class="text-lg font-luxury text-slate-900 mb-4 uppercase tracking-widest">Consultancy</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed font-light">Saran ahli mengenai pasar real estat lokal di wilayah Hounslow dan sekitarnya untuk investasi Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-32 px-8 bg-slate-900 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-24">
+            <div class="md:w-1/2">
+                <h3 class="text-4xl font-luxury mb-8">Strategis di London Barat</h3>
+                <p class="text-slate-400 mb-10 text-lg font-light leading-relaxed italic">"Berlokasi di Channel Close, Hounslow, kami berada di titik nadi transportasi London, memastikan aksesibilitas maksimal bagi seluruh aset kami."</p>
+                
+                <div class="accent-border pl-8 space-y-6">
+                    <div>
+                        <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold mb-1">Official Address</p>
+                        <p class="text-sm font-light">1 Channel Close, Hounslow, TW5 0PJ, UK</p>
+                    </div>
+                    <div>
+                        <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold mb-1">Company Nature</p>
+                        <p class="text-sm font-light italic">Private Limited Company - Real Estate Experts</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 w-full relative">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" alt="Modern Architecture" class="rounded shadow-2xl grayscale">
+                <div class="absolute -bottom-10 -left-10 bg-white p-10 hidden lg:block shadow-2xl">
+                    <p class="text-slate-900 font-luxury text-4xl">TW5</p>
+                    <p class="text-[9px] uppercase tracking-[0.4em] font-bold text-slate-400 leading-none">Hounslow District</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-white py-32 px-8 border-t border-slate-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-luxury text-slate-900 mb-12 uppercase tracking-[0.3em] italic">Inquiry</h2>
+            <p class="text-slate-500 mb-20 font-light max-w-2xl mx-auto leading-relaxed">Untuk korespondensi resmi mengenai manajemen properti atau pertanyaan penyewaan, silakan hubungi kantor terdaftar kami.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-24 text-left">
+                <div class="p-10 bg-slate-50 border border-slate-100 transition hover:border-slate-400">
+                    <p class="text-slate-400 text-[10px] uppercase tracking-widest mb-4 font-bold">Email Channel</p>
+                    <p class="text-slate-900 font-luxury text-xl">admin@rynar-estates.co.uk</p>
+                </div>
+                <div class="p-10 bg-slate-50 border border-slate-100 transition hover:border-slate-400">
+                    <p class="text-slate-400 text-[10px] uppercase tracking-widest mb-4 font-bold">Office Hours</p>
+                    <p class="text-slate-900 font-luxury text-xl italic">Mon - Fri: 09:00 - 17:00 GMT</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center pt-20 border-t border-slate-100 gap-10">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-slate-800 flex items-center justify-center rounded">
+                        <span class="text-white text-xs font-luxury">R</span>
+                    </div>
+                    <span class="text-xs font-bold tracking-[0.5em] uppercase text-slate-400 leading-none">Rynar Estates Limited</span>
+                </div>
+                <p class="text-[9px] text-slate-400 uppercase tracking-[0.5em] font-bold italic">
+                    &copy; 2026 Rynar Estates Ltd. Registered in England & Wales.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
